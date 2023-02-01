@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    list-style: node;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    text-decoration: none;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 32rem auto;
+}
+.page-wrapper {
+    background-image: url("./img/back.jpg");
+}
+.sidebar {
+    position: fixed;
+    overflow-y: auto;
+    z-index: 999;
+    width: 32rem;
+    height: 100vh;
+    background-color: #000000;
+}
+.sidebar ul.menu {
+    margin-top: 8.4rem;
+}
+.item a {
+    display: flex;
+    align-items: center;
+}
+.item a i {
+    font-size: 3rem;
+    margin-left: 2.6rem;
+    margin-right: 0;
+    color: #ffffff;
+}
+.item a p {
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    margin-left: 0.9rem;
+    color: #ffffff;
+}
+.item i {
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin-right: 2rem;
+    color: #ffffff;
+}
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5.5rem;
+}
+.sub-menu {
+    background-color: #333333;
+    display: none;
+    width: 32rem;
+}
+.sub-menu li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 5.5rem;
+}
+.sub-menu li span {
+    color: #ffffff;
+    font-family: "Poppins";
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    margin: 6.5rem;
+}
+.menu-item {
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.active {
+    background: #03a9f4;
+}
+.active2 {
+    display: block;
+}
+
+header {
+    height: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.header-left {
+    margin-left: 65px;
+}
+.header-left span {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.header-right {
+    margin-right: 20px;
+    display: flex;
+    gap: 5px;
+}
+
+.alert {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 44px;
+    background-color: #f44336;
+    border-radius: 50px;
+    margin-right: 40px;
+    text-align: center;
+    align-items: center;
+}
+.alert p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.alert i {
+    display: none;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+.desktop i {
+    font-size: 18px;
+    color: #03a9f4;
+}
+.mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+.mobile i {
+    font-size: 25px;
+    color: #03a9f4;
+}
+.open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 44px;
+    width: 140px;
+    background-color: #4caf50;
+    border-radius: 50px;
+}
+.open p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.open i {
+    font-size: 18px;
+    color: #ffffff;
+}
+.users {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+.users i {
+    font-size: 18px;
+    color: #03a9f4;
+}
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+.search i {
+    font-size: 18px;
+    color: #03a9f4;
+}
+@media only screen and (max-width: 1300px) {
+    .alert {
+        width: 44px;
+    }
+    .alert p {
+        display: none;
+    }
+    .alert i {
+        display: block;
+    }
+    .open {
+        width: 44px;
+    }
+    .open p {
+        display: none;
+    }
+}
+
+.statistics {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.statistics .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #03a9f4;
+    min-width: 74.7rem;
+    height: 7.3rem;
+}
+.statistics .head span {
+    margin-left: 3.5rem;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+.statistics .head i {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-right: 3.5rem;
+}
+.statistics-header {
+    background: #ffffff;
+    min-width: 74.7rem;
+}
+.statistics-header .bevestigd {
+    display: grid;
+    text-align: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: start;
+}
+.bevestigd h1 {
+    font-size: 3.6rem;
+    line-height: 5.4rem;
+    font-weight: 600;
+    color: #4caf50;
+}
+
+.bevestigd h2 {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    font-weight: 600;
+    color: #4caf50;
+}
+.bevestigd p {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    font-weight: 400;
+    color: #4caf50;
+}
+
+.statistics-header .icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.icons p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+.icons i {
+    font-size: 1.4rem;
+}
+.icons .apple {
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 4.8rem;
+    height: 2rem;
+    background-color: #bbbbbb;
+}
+.icons .icon {
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 4.8rem;
+    height: 2rem;
+    background-color: #bbbbbb;
+}
+.icons .icon .fa-android {
+    color: #a6d864;
+}
+.statistics-header .buttons {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.statistics-header .buttons .open-btn {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+    color: #bbbbbb;
+    background: #ffffff;
+    height: 4rem;
+    width: 21rem;
+    box-shadow: none;
+    border: 1px solid #bbbbbb;
+    border-radius: 3rem;
+}
+.tables {
+    height: 30rem;
+    background: #ffffff;
+}
+
+.tables .table-wrapper {
+    margin: 2rem;
+    border: 1px solid #bbbbbb;
+}

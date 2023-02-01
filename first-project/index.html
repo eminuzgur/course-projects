@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="sidebar-wrapper">
+            <nav class="sidebar">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <div class="item">
+                            <a href="">
+                                <i class="fa fa-pie-chart"></i>
+                                <p>Statistieken</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="item">
+                            <a href="">
+                                <i class="fa fa-th-list"></i>
+                                <p>Bestellingen</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="item">
+                            <a href="">
+                                <i class="fa fa-archive"></i>
+                                <p>Kassa</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="item">
+                            <a href="">
+                                <i class="fa fa-users"></i>
+                                <p>Klanten</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="item">
+                            <a href="#">
+                                <i class="fa fa-google-wallet"></i>
+                                <p>Financieel</p>
+                            </a>
+                            <i class="fa fa-plus btn" id="btn"></i>
+                        </div>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="">
+                                    <span> Overzischt </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span> Bestellingen </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span> iDeal Betalingen </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span> DeneiDeal Uitbetalingenme </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span> Betalingen </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <div class="item">
+                            <a href="">
+                                <i class="fa fa-bars"></i>
+                                <p>Menukaart</p>
+                            </a>
+                            <i class="fa fa-plus btn"></i>
+                        </div>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="">
+                                    <span> Producten </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span> Extra’s </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span> Kortingen </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span> Kortingen (oud) </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span> Export </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <div class="item">
+                            <a href="">
+                                <i class="fa fa-flag"></i>
+                                <p>Reclame</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="item">
+                            <a href="">
+                                <i class="fa fa-cog"></i>
+                                <p>Instellingen</p>
+                            </a>
+                            <i class="fa fa-plus btn"></i>
+                        </div>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="">
+                                    <span> Adres </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span> Bank </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span> Bezorggebieden </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span> Zwarte Lijst </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span> Notificaties </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span> Slideshow Foto’s </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span> Thema en Stijling </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span> Tijden </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span> Bezorgers </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="page-wrapper">
+            <header>
+                <div class="header-left">
+                    <span>ultimatums.nl</span>
+                </div>
+                <div class="header-right">
+                    <div class="alert">
+                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                        <p>4 product is niet op voorraad.</p>
+                    </div>
+                    <div class="desktop">
+                        <i class="fa fa-desktop" aria-hidden="true"></i>
+                    </div>
+                    <div class="mobile">
+                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                    </div>
+                    <div class="open">
+                        <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                        <p>Geopend</p>
+                    </div>
+                    <div class="users">
+                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(() => {
+                $("nav ul.menu li.menu-item ").click(function () {
+                    $(this).addClass("active").siblings().removeClass("active");
+                });
+                $("nav ul li .btn ").click(function () {
+                    $(this).toggleClass("fa-plus").toggleClass("fa-minus");
+                    $(this).parent().parent().children(".sub-menu").slideToggle().toggleClass("active2");
+                });
+            });
+        </script>
+    </body>
+</html>
